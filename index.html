@@ -19,10 +19,55 @@
 <main>
              <!--backdrop-->
     <section class="backdrop is-hidden" data-modal>
-        <div class="modal"><button type="button" class="button-modal" data-modal-close>
+        <div class="modal">
+            <button type="button" class="button-modal" data-modal-close>
                 <svg class="close-icon" height="18px" width="18px">
-                <use href="./images/icons.svg#icon-close"></use>
-                </svg></button>
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="backdrop-form" name="customers-info" autocomplete="off">
+                <label class="backdrop-field">
+                    Имя
+                    <input type="text" name="name" class="backdrop-input" >
+                    <div class="backdrop-icon">
+                        <svg>
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="backdrop-field">
+                    Телефон
+                    <input type="tel" name="tel" class="backdrop-input">
+                    <div class="backdrop-icon">
+                        <svg class="test">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="backdrop-field">
+                    Почта
+                    <input type="email" name="email" class="backdrop-input">
+                    <div class="backdrop-icon">
+                        <svg>
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="backdrop-field">
+                    Комментарий
+                    <textarea name="coments" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="backdrop-field chekbox">
+                    <input type="checkbox" name="license" class="form-input hiden">
+                    <div class="chekbox-icon"><svg width="11" heght="8" fill="#fff"><use href="./images/icons.svg#icon-check"></use></svg></div>
+                    <p>Соглашаюсь с рассылкой и принимаю <a href="https://www.google.com/" target="blank">Условия договора</a></p>
+                    
+                </label>
+                <div class="button-position">
+                    <button type="submit" class="backdrop-button">Отправить</button>
+                </div>
+            </form>
         </div>       
     </section>
     <header>
@@ -51,7 +96,7 @@
         <section class="advantage">
             <div class="container">
             <!-- "advantage" hiden header -->
-                <!-- <h2 class="hiden">Приемущество</h2> -->
+                <h2 class="hiden">Приемущество</h2>
                 <ul class="advantage-list">
                 <li>
                     <span class="advantage-img"><svg class="advantage-icon"><use href="./images/icons.svg#icon-antenna"></use></svg></span>
@@ -318,6 +363,21 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="subscribes">
+                <h2 class="subscribes-title">Подпишитесь на рассылку</h2>
+                <form name="subscribes" class="subscribes-form">
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail" class="input-subscribes">
+                    </label>
+                    <button type="submit" class="subscribes-button">Подписаться
+                        <div class="subscribes-icon">
+                        <svg width="24" heght="24" fill="#fff">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                        </div>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
