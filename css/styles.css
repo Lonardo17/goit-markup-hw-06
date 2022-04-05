@@ -286,8 +286,11 @@ textarea{
   border-radius: 2px;
   margin-right: 8px;
   display: flex;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+}
+.checkbox-link {
+  color: #2196F3;
 }
 .backdrop-button{
   cursor: pointer;
@@ -315,7 +318,9 @@ textarea:focus-within{
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 2px;
 }
-.backdrop-input:focus-within + .backdrop-icon {
+.backdrop-input:focus-within + .backdrop-icon,
+.close-icon:focus,
+.close-icon:hover {
   fill: #2196f3;
 }
 .backdrop-icon{
