@@ -17,59 +17,6 @@
 </head>
 <body>
 <main>
-             <!--backdrop-->
-    <section class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="button-modal" data-modal-close>
-                <svg class="close-icon" height="18px" width="18px">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <h2 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <form class="backdrop-form" name="customers-info" autocomplete="off">
-                <label class="backdrop-field">
-                    Имя
-                    <input type="text" name="name" class="backdrop-input" >
-                    <div class="backdrop-icon">
-                        <svg>
-                            <use href="./images/icons.svg#icon-person"></use>
-                        </svg>
-                    </div>
-                </label>
-                <label class="backdrop-field">
-                    Телефон
-                    <input type="tel" name="tel" class="backdrop-input">
-                    <div class="backdrop-icon">
-                        <svg class="test">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </label>
-                <label class="backdrop-field">
-                    Почта
-                    <input type="email" name="email" class="backdrop-input">
-                    <div class="backdrop-icon">
-                        <svg>
-                            <use href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                    </div>
-                </label>
-                <label class="backdrop-field">
-                    Комментарий
-                    <textarea name="coments" placeholder="Введите текст"></textarea>
-                </label>
-                <label class="backdrop-field chekbox">
-                    <input type="checkbox" name="license" class="form-input hiden">
-                    <div class="chekbox-icon"><svg width="12" height="9" fill="#fff"><use href="./images/icons.svg#icon-check"></use></svg></div>
-                    <p>Соглашаюсь с рассылкой и принимаю <a href="https://www.google.com/" target="blank" class="checkbox-link">Условия договора</a></p>
-                    
-                </label>
-                <div class="button-position">
-                    <button type="submit" class="backdrop-button">Отправить</button>
-                </div>
-            </form>
-        </div>       
-    </section>
     <header>
         <div class="container header ">
         <nav class="header-navigation">
@@ -381,6 +328,62 @@
             </div>
         </div>
     </footer>
+            <!--backdrop-->
+            <section class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="button-modal" data-modal-close>
+                        <svg class="close-icon" height="18px" width="18px">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h2 class="backdrop-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <form class="backdrop-form" name="customers-info" autocomplete="off">
+                        <label class="backdrop-field">
+                            Имя
+                            <input type="text" name="name" class="backdrop-input">
+                            <div class="backdrop-icon">
+                                <svg>
+                                    <use href="./images/icons.svg#icon-person"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="backdrop-field">
+                            Телефон
+                            <input type="tel" name="tel" class="backdrop-input">
+                            <div class="backdrop-icon">
+                                <svg class="test">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="backdrop-field">
+                            Почта
+                            <input type="email" name="email" class="backdrop-input">
+                            <div class="backdrop-icon">
+                                <svg>
+                                    <use href="./images/icons.svg#icon-email"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="backdrop-field">
+                            Комментарий
+                            <textarea name="coments" placeholder="Введите текст"></textarea>
+                        </label>
+                        <label class="backdrop-field chekbox">
+                            <input type="checkbox" name="license" class="form-input hiden">
+                            <div class="chekbox-icon"><svg width="12" height="9" fill="#fff">
+                                    <use href="./images/icons.svg#icon-check"></use>
+                                </svg></div>
+                            <p>Соглашаюсь с рассылкой и принимаю <a href="https://www.google.com/" target="blank"
+                                    class="checkbox-link">Условия договора</a></p>
+            
+                        </label>
+                        <div class="button-position">
+                            <button type="submit" class="backdrop-button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
 <script src="./js/modal.js"></script>
 </body>
 </html>
